@@ -20,5 +20,5 @@ function binToDec(binString){
 }
 
 
-module.exports = {binToDec};
 
+module.exports = {binToDec};
