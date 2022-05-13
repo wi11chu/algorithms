@@ -13,7 +13,7 @@ fizzbuzz(16);
 */
 
 const fizzbuzz = num => {  
-
+  
 };
 
 /*
@@ -36,5 +36,7 @@ fizzbuzzbazz(22);
 */
 
 const fizzbuzzbazz = num => {
-
+  
 };
+
+module.exports = {fizzbuzz, fizzbuzzbazz};
