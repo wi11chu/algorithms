@@ -21,30 +21,9 @@ calculate profit along the array.
 */
 
 const highestProfit = apple_stock => {
-  // input: array of numbers
-  // output: number
-  // goal: in index order, buy at cheapest and sell at highest
 
-  // O(n^2) approach
 
-  // edge: if input is not array of numbers, return 0
-  if (!Array.isArray(apple_stock) || !apple_stock.every(element => typeof element === 'number')) return 0;
-
-  // create variable to store current profit
-  let profit = -Infinity;
-
-  // iterate through the array to identify the purchase price
-  for (let i = 0; i < apple_stock.length; i++) {
-    // iterate through the array to identify the sell price
-    for (let j = i+1; j < apple_stock.length; j++) {
-      // if difference is greater than current profit, replace current profit
-      if (apple_stock[j] - apple_stock[i] > profit) profit = apple_stock[j] - apple_stock[i];
-    }
-  }
-
-  // if profit < 0, return 0. else return profit.
-  if (profit < 0) return 0;
-  return profit;
+  
 }
 
 let array = [1000, 500, 1500, 2000, 0];
